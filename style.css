@@ -67,7 +67,7 @@ body {
   }
 
   #home > div {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 20px;
   }
 
@@ -76,8 +76,9 @@ body {
   }
 
   #home > div > div {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     text-align: center;
+    /* background-image: url(./images/home/2206_w018_n002_1019a_p30_1019.jpg); */
   }
 
   #home > div:nth-child(2) {
@@ -109,9 +110,9 @@ body {
   /* About Section  */
   #about {
     box-sizing: border-box;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
-    padding: 3% 5%;
+    padding: 3% 10%;
     background-color: var(--color-2);
   }
 
@@ -125,7 +126,7 @@ body {
   }
 
   #about > div {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     display: flex;
@@ -138,7 +139,7 @@ body {
   }
 
   #about > div > div {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding: 20px;
   }
 
@@ -159,9 +160,9 @@ body {
   /* Skills Section  */
   #skills {
     box-sizing: border-box;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
-    padding: 3% 5%;
+    padding: 3% 10%;
     background-color: var(--color-2);
   }
 
@@ -172,7 +173,7 @@ body {
   }
 
   #skills > div {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     gap: 50px;
@@ -188,8 +189,37 @@ body {
   }
 
   .skills-icons {
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    display: flex;
+    gap: 30px 20px ;
+    background-color: var(--color-2);
+    border-radius: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding: 20px 20px 10px;
+  }
+
+  .skills-card {
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    padding: 10px;
     
+  }
+
+  .skills-card-img {
+    width: 80px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -20px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+  }
+
+  .skills-card-name {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 5px;
   }
 
   /* Project Section  */
@@ -197,7 +227,7 @@ body {
     box-sizing: border-box;
     /* border: 2px solid red; */
     width: 100%;
-    padding: 3% 5%;
+    padding: 3% 10%;
     background-color: var(--color-2);
   }
 
@@ -221,10 +251,27 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .project-card:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .project-card:last-child {
+    margin-bottom: 0px;
   }
 
   .project-card > div:nth-child(1) {
     width: 40%;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+
+  .project-card > div:nth-child(2) {
+    width: 60%;
+    /* border: 2px solid red; */
   }
 
   .project-image {
@@ -233,7 +280,51 @@ body {
   }
 
   .project-title {
-    margin-top: 0px;
+    margin: 0px auto;
+    font-size: 30px;
+  }
+
+  .project-title > span {
+    color: #A186E3;
+  }
+
+  .project-description {
+    font-size: 20px;
+    margin: 10px auto;
+  }
+
+  .project-tech-stack {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 0px;
+    margin: 10px auto;
+  }
+
+  .project-skills-card {
+    border: 1px solid grey;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    gap: 8px;
+    padding: 0px 20px 0px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -20px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  }
+
+  .project-skills-card-img {
+    width: 30px;
+    border-radius: 25%;
+    
+    
+  }
+
+  .project-skills-card-name {
+    font-size: 18px;
   }
 
   .project-buttons {
@@ -249,27 +340,172 @@ body {
 
   .project-deployed-link > button {
     width: 100%;
+    height: 40px;
     font-size: 20px;
-    padding: 15px ;
-    border-radius: 15px;
+    padding: auto ;
+    border-radius: 30px;
     border: none;
-    color: white;
+    color: rgb(255, 97, 40);
+    border: 1px solid rgb(255, 97, 40);
+    background-color: white;
+    /* box-shadow: rgba(255, 97, 40, 0.12) 0px 2px 4px 0px, rgba(255, 97, 40, 0.32) 0px 2px 16px 0px; */
+    cursor: pointer;
+  }
+
+  .project-deployed-link > button:hover {
     background-color: rgb(255, 97, 40);
-    box-shadow: rgba(255, 97, 40, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    
+    color: white;
   }
 
   .project-github-link > button {
     width: 100%;
+    height: 40px;
     font-size: 20px;
-    padding: 15px;
-    border-radius: 15px;
+    padding: auto;
+    border-radius: 30px;
     border: none;
-    color: white;
-    background-color: rgb(146, 50, 175);
-    box-shadow: rgba(146, 50, 175, 0.12) 0px 2px 4px 0px, rgba(146, 50, 175, 0.32) 0px 2px 16px 0px;
+    color: rgb(146, 50, 175);
+    border: 1px solid rgb(146, 50, 175);
+    background-color: white;
+    /* box-shadow: rgba(146, 50, 175, 0.12) 0px 2px 4px 0px, rgba(146, 50, 175, 0.32) 0px 2px 16px 0px; */
+    cursor: pointer;
   }
 
+  .project-github-link > button:hover {
+    background-color: rgb(146, 50, 175);
+    color: white;
+  }
+
+  /* Statistics Section  */
+  #statistics {
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 3% 10%;
+    background-color: var(--color-2);
+  }
+
+  #statistics > p {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+  }
+
+  #statistics > div {
+    /* border: 2px solid blue; */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  #statistics > div > div > img {
+    height: 165px;
+    width: 500px;
+  }
+
+  /* Contact Section  */
+  #contact {
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 3% 10%;
+    background-color: var(--color-2);
+  }
+
+  #contact > p {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+  }
+
+  #contact > div {
+    /* border: 2px solid blue; */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* #contact > div > div {
+    border: 2px solid red;
+  } */
+
+  #contact img {
+    width: 200px;
+  }
+
+  .contact-details {
+    width: 50%;
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
+  }
+
+  .contact-details > div {
+    margin-bottom: 10px;
+  }
+
+  .contact-details label {
+    font-weight: bold;
+  }
+
+  .contact-details label,a {
+    font-size: 28px;
+  }
+
+  .contact-details a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #contact-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+  #contact-buttons img {
+    width: 100%;
+    background-color: white;
+    border-radius: 50%;
+  }
+  #contact-buttons button {
+    border: none;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  #contact-buttons button > span:nth-child(1) {
+    width: 24px;
+    height: 24px;
+    /* border: 1px solid blue; */
+  }
+
+  #github {
+    background-color: #5c6bc0;
+  }
+
+  #linkedin {
+    background-color: #2e78b6
+  }
 
 /* Phone */
 @media screen and (max-width: 600px) {
