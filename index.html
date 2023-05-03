@@ -18,7 +18,7 @@
       <a href="#skills" class="nav-link skills">Skills</a>
       <a href="#projects" class="nav-link projects">Projects</a>
       <a href="#contact" class="nav-link contact">Contact</a>
-      <a href="resume.pdf" class="nav-link resume" target="_blank">Resume</a>
+      <button id="resume-button-1" class="nav-link">Resume</button>
     </div>
   </nav>
 
@@ -40,11 +40,16 @@
     <p>About <br><span>Me</span></p>
     <div>
       <div>
-        <img src="./images/about/megaphone-front-color.png" alt="">
+        <img src="./images/about/megaphone-front-color.png" alt="" id="speaker">
       </div>
-      <div id="user-detail-intro">
-        <p>I'm a <span>Full Stack Web Developer</span> skilled in MERN stack.</p>
-        <p>My goal is to create intuitive, functional, and beautiful web applications that make a positive impact in the lives of users.</p>
+      <div>
+        <p id="user-detail-intro">A skilled <span>Full Stack Web Developer</span> with hands-on experience in HTML, CSS, Vanilla JS, NodeJS, ExpressJS, and MongoDB. <br><br>
+        Proficient in developing user-friendly web applications. Seeking a challenging role to enhance skills and contribute to the growth of an organization.</p>
+        <span>You can find my resume here</span>
+        <button id="resume-button-2">
+          <img src="./images/about/downloads.png" alt="" id="download-img">
+          <span>Resume</span>
+        </button>
       </div>
     </div>
   </section>
@@ -306,8 +311,9 @@
 
   <!-- Statistics Section  -->
   <section id="statistics">
-    <p>Statistics</span></p>
+    <p>Statistics</p>
     <div>
+      
       <div>
         <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=patel-anshuman&theme=transparent&border_radius=10" alt="GitHub Streak Stats">
       </div>
@@ -325,21 +331,23 @@
   <section id="contact">
     <p>Contact</p>
     <div>
-      <div class="contact-image">
+      <div id="contact-image">
         <img src="./images/contact/boy-front-color.png" alt="Contact Icon">
       </div>
-      <div class="contact-details">
-        <div>
+      <div id="contact-details">
+        <div >
           <label>Email:</label>
-          <a href="mailto:patelanshuman6@gmail.com">patelanshuman6@gmail.com</a>
+          <span>patelanshuman6@gmail.com</span>
+          <!-- <a href="mailto:patelanshuman6@gmail.com">patelanshuman6@gmail.com</a> -->
         </div>
         <div>
           <label>Phone:</label>
-          <a href="tel:+917008157930">+91 7008157930</a>
+          <span>+91 7008157930</span>
+          <!-- <a href="tel:+917008157930">+91 7008157930</a> -->
         </div>
         <div>
           <label>Address:</label>
-          <a href="https://www.google.com/maps/place/Sambalpur,+Odisha/@21.5561602,84.2833263,9z/data=!3m1!4b1!4m6!3m5!1s0x3a21142e877aec21:0xb1de6c89024c5b92!8m2!3d21.4698302!4d84.1857115!16zL20vMDVwbTFn" target="_blank">Sambalpur, Odisha</a>
+          <span>Sambalpur, Odisha</span>
         </div>
         <!-- <div>
           <i class="fa fa-github"></i>
@@ -350,14 +358,14 @@
           <a href="https://www.linkedin.com/in/patel-anshuman/" target="_blank">patel-anshuman</a>
         </div> -->
         <div id="contact-buttons">
-          <a href="https://github.com/patel-anshuman" target="_blank">
-            <button id="github">
+          <a href="https://github.com/patel-anshuman/" target="_blank">
+            <button id="contact-github">
               <span><img src="./images/contact/github.png" alt=""></span>
               <span>patel-anshuman</span>
             </button>
           </a>
           <a href="https://www.linkedin.com/in/patel-anshuman/" target="_blank">
-            <button id="linkedin">
+            <button id="contact-linkedin">
               <span><img src="./images/contact/linkedin.png" alt=""></span>
               <span>patel-anshuman</span>
             </button>
@@ -365,8 +373,34 @@
         </div>
       </div>
     </div>
+    <br>
+    <hr>
+    <h4>Made with &#x2665 by Anshuman</h4>
   </section>
+
+  
   
 
 </body>
+<script>
+  // Resume Buttons 
+  document.getElementById("resume-button-1").addEventListener("click", () => {
+    window.open("./resume/Anshuman-Patel-Resume.pdf", "_blank");
+    var link = document.createElement("a");
+    link.href = "./resume/Anshuman-Patel-Resume.pdf";
+    link.target = "_blank";
+    link.download = "Anshuman-Patel-Resume.pdf";
+    link.click();
+  });
+
+  document.getElementById("resume-button-2").addEventListener("click", () => {
+    window.open("./resume/Anshuman-Patel-Resume.pdf", "_blank");
+    var link = document.createElement("a");
+    link.href = "./resume/Anshuman-Patel-Resume.pdf";
+    link.target = "_blank";
+    link.download = "Anshuman-Patel-Resume.pdf";
+    link.click();
+  });
+
+</script>
 </html>

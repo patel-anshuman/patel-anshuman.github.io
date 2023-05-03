@@ -7,11 +7,22 @@
   --color-5: #22303C;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Body */
 body {
   margin: 0px;
   padding: 0px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Resume button 1 */
+#resume-button-1 {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
 }
 
 /* Navbar styles */
@@ -33,10 +44,11 @@ body {
   #nav-menu > div:nth-child(2){
     /* border: 2px solid yellow; */
     display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-    padding: 10px 0px;
+    justify-content: space-between;
+    width: 50%;
   }
+
+  
   
   .nav-link {
     /* border: 1px solid green; */
@@ -94,6 +106,7 @@ body {
 
   #user-detail-name > span {
     color: #A186E3;
+    font-size: 60px;
   }
 
   #user-title {
@@ -123,6 +136,7 @@ body {
   }
   #about > p > span {
     color: #A186E3;
+    font-size: 40px;
   }
 
   #about > div {
@@ -141,17 +155,45 @@ body {
   #about > div > div {
     /* border: 2px solid green; */
     padding: 20px;
+    font-size: 24px;
   }
 
-  #about img {
+  #about span {
+    font-size: 24px;
+  }
+
+  #resume-button-2 {
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: white;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  #resume-button-2:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  #speaker {
     width: 200px;
   }
 
-  #user-detail-intro {
-    width: 50%;
-    font-size: 24px;
-    
+  #download-img {
+    width: 20px;
   }
+
+  #user-detail-intro {
+    text-align: justify;
+  }
+
 
   #user-detail-intro span {
     color: #A186E3;
@@ -286,6 +328,7 @@ body {
 
   .project-title > span {
     color: #A186E3;
+    font-size: 30px;
   }
 
   .project-description {
@@ -447,33 +490,34 @@ body {
     width: 200px;
   }
 
-  .contact-details {
+  #contact-details {
     width: 50%;
     /* display: flex;
     flex-direction: column;
     gap: 10px; */
   }
 
-  .contact-details > div {
+  #contact-details > div {
     margin-bottom: 10px;
   }
 
-  .contact-details label {
+  #contact-details label {
     font-weight: bold;
   }
 
-  .contact-details label,a {
+  #contact-details label,span {
     font-size: 28px;
   }
 
-  .contact-details a {
+  #contact-details a {
     text-decoration: none;
     color: black;
   }
 
   #contact-buttons {
+    /* border: 2px solid red; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content:flex-start;
     margin-top: 10px;
   }
   #contact-buttons img {
@@ -482,16 +526,20 @@ body {
     border-radius: 50%;
   }
   #contact-buttons button {
+    width: 190px;
     border: none;
     display: flex;
     gap: 9px;
+    margin-right: 20px;
     align-items: center;
     justify-content: center;
     padding: 12px 18px;
-    font-size: 16px;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+  }
+  #contact-buttons button > span:nth-child(2) {
+    font-size: 16px;
   }
   #contact-buttons button > span:nth-child(1) {
     width: 24px;
@@ -499,13 +547,19 @@ body {
     /* border: 1px solid blue; */
   }
 
-  #github {
+  #contact-github {
     background-color: #5c6bc0;
   }
 
-  #linkedin {
+  #contact-linkedin {
     background-color: #2e78b6
   }
+
+  #contact > h4 {
+    text-align: center;
+  }
+
+  
 
 /* Phone */
 @media screen and (max-width: 600px) {
