@@ -25,6 +25,11 @@ body {
   background-color: transparent;
 }
 
+#resume-button-1 > a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Navbar styles */
   #nav-menu {
     width: 100%;
@@ -35,7 +40,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10%;
+    padding: 10px;
     background-color: #959eff;
     color: #000;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;

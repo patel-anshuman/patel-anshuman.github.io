@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anshuman Patel | Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+  <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +23,9 @@
       <a href="#skills" class="nav-link skills">Skills</a>
       <a href="#projects" class="nav-link projects">Projects</a>
       <a href="#contact" class="nav-link contact">Contact</a>
-      <button id="resume-button-1" class="nav-link resume">Resume</button>
+      <button id="resume-button-1" class="nav-link resume">
+        <a href="./resume/Anshuman-Patel-Resume.pdf" target="_blank" id="resume-link-1" download="Anshuman-Patel-Resume">Resume</a>
+      </button>
     </div>
   </nav>
 
@@ -313,7 +320,7 @@
   <section id="statistics">
     <p>Statistics</p>
     <div>
-      
+      <div class="react-activity-calendar calendar"></div>
       <div>
         <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=patel-anshuman&theme=transparent&border_radius=10" alt="GitHub Streak Stats">
       </div>
@@ -401,6 +408,9 @@
     link.download = "Anshuman-Patel-Resume.pdf";
     link.click();
   });
+
+  // Github Calendar
+  GitHubCalendar(".calendar", "patel-anshuman", { responsive: true });
 
 </script>
 </html>
