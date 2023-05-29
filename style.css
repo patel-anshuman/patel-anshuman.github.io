@@ -24,10 +24,18 @@ body {
   border-radius: 5px;
   background-color: transparent;
 }
+#resume-button-1:hover {
+  border: 1px solid #A186E3;
+  transition: 0.3s;
+}
 
 #resume-button-1 > a {
   text-decoration: none;
   color: black;
+}
+#resume-button-1 > a:hover {
+  color: #A186E3;
+  transition: 0.3s;
 }
 
 /* Navbar styles */
@@ -42,9 +50,11 @@ body {
     align-items: center;
     gap: 20%;
     padding: 10px;
-    background-color: #959eff;
+    /* background-color: #959eff; */
     color: #000;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
   }
 
   #nav-menu > div:nth-child(2){
@@ -53,8 +63,6 @@ body {
     justify-content: space-between;
     width: 50%;
   }
-
-  
   
   .nav-link {
     /* border: 1px solid green; */
@@ -68,8 +76,14 @@ body {
 
   .nav-link:hover {
     background-color: transparent;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    color: #A186E3;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
   }
+
+  @media screen and (max-width: 1000px) {
+    /* Hamburger menu */
+  }
+  
   
   /*--------------------------- Home section ------------------------*/
   #home {
@@ -82,6 +96,10 @@ body {
     margin-inline: auto;
     align-items: center;
     background-color: var(--color-2);
+    /* background-image: url('https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1190&q=80'); */
+    background-position: center;
+    background-size: cover;
+    
   }
 
   #home > div {
@@ -122,6 +140,7 @@ body {
   }
 
   .home-img {
+    
     width: 280px;
     border-radius: 50%;
     border: 15px solid white;
@@ -417,7 +436,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     gap: 50px;
-    padding: 3%;
+    padding: 2%;
     margin-top: 20px;
     margin-bottom: 30px;
   }
@@ -426,7 +445,10 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 50px;
+    padding: 2%;
+    margin-bottom: 2%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px;
   }
 
   .project-card:nth-child(2n) {
@@ -438,14 +460,14 @@ body {
   }
 
   .project-card > div:nth-child(1) {
-    width: 40%;
+    width: 45%;
     display: flex;
     align-items: center;
     /* border: 2px solid red; */
   }
 
   .project-card > div:nth-child(2) {
-    width: 60%;
+    width: 55%;
     /* border: 2px solid red; */
   }
 
