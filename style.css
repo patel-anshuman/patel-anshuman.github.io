@@ -96,17 +96,33 @@ body {
 }
 
 /* Resume button 1 */
-#resume-link-1 {
+#resume-button-1 {
+    height: 41px;
     border: 1px solid black;
     background-color: transparent;
+    padding: 0px;
 }
 
-#resume-link-1:hover {
+#resume-button-1:hover {
     border: 1px solid transparent;
     background-color: #c3eee4;
     color: black;
     transition: 0.3s;
 }
+
+#resume-link-1 {
+    text-decoration: none;
+    color: #000;
+    padding: 10.5px 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* #resume-link-1:hover {
+    border: 1px solid transparent;
+    background-color: #c3eee4;
+    color: black;
+    transition: 0.3s;
+} */
 
 /*--------------------------- Home section ------------------------*/
 #home {
@@ -227,7 +243,39 @@ body {
 
 }
 
+/* Resume button 1 */
+#resume-button-2 {
+    height: 41px;
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 0px;
+}
+
+#resume-button-2:hover {
+    border: 1px solid transparent;
+    background-color: #c3eee4;
+    color: black;
+    transition: 0.3s;
+}
+
 #resume-link-2 {
+    text-decoration: none;
+    color: #000;
+    padding: 10.5px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* #resume-link-1:hover {
+    border: 1px solid transparent;
+    background-color: #c3eee4;
+    color: black;
+    transition: 0.3s;
+} */
+
+/* #resume-link-2 {
     width: 200px;
     height: 30px;
     font-size: 16px;
@@ -246,7 +294,7 @@ body {
     color: black;
     transition: 0.3s;
 
-}
+} */
 
 /*------------------------ Skills Section ------------------------- */
 #skills {
@@ -492,7 +540,7 @@ body {
 
 }
 
-.project-buttons>a {}
+/* .project-buttons>a {} */
 
 .project-buttons>.project-github-link {
     color: #321a53d4;
