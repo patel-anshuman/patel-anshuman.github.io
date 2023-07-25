@@ -186,7 +186,7 @@ body {
     left: 50%;
     transform: translate(-50%, 50%);
     width: 40px;
-    animation: buttonAnimation 2s ease-in-out infinite alternate;
+    animation: buttonAnimation 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes buttonAnimation {
@@ -273,27 +273,6 @@ body {
     background-color: #c3eee4;
     color: black;
     transition: 0.3s;
-} */
-
-/* #resume-link-2 {
-    width: 200px;
-    height: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    border: 1px solid black;
-    background-color: transparent;
-    text-decoration: none;
-    color: black;
-    padding: 10px 25px;
-    cursor: pointer;
-}
-
-#resume-link-2:hover {
-    border: 1px solid transparent;
-    background-color: #c3eee4;
-    color: black;
-    transition: 0.3s;
-
 } */
 
 /*------------------------ Skills Section ------------------------- */
