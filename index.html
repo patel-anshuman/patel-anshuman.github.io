@@ -1,421 +1,655 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./images/AP_favicon_2.png" type="image/x-icon">
-  <title>Anshuman Patel | Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/AP_favicon_2.png"
+      type="image/x-icon"
+    />
+    <title>Portfolio | Anshuman Patel</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ------------GitHub Calendar------------ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+  </head>
+  <body>
+    <!-- <div id="background-image"></div> -->
+    <!-- Navbar -->
+    <nav id="nav-menu">
+      <a href="">
+        <img src="./images/AP_favicon_2.png" alt="" />
+      </a>
+      <div id="nav-sections">
+        <a href="#home" class="nav-link home">Home</a>
+        <a href="#about" class="nav-link about section">About</a>
+        <a href="#skills" class="nav-link skills">Skills</a>
+        <a href="#projects" class="nav-link projects">Projects</a>
+        <a href="#statistics" class="nav-link statistics">GitStats</a>
+        <a href="#contact" class="nav-link contact">Contact</a>
+        <a
+          href="./resume/Anshuman-Patel-Resume.pdf"
+          target="_blank"
+          id="resume-link-1"
+          class="nav-link resume"
+          download="Anshuman-Patel-Resume"
+          >Resume</a
+        >
+      </div>
+    </nav>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-  <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-  
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <!-- Navbar -->
-  <nav id="nav-menu">
-    <div id="nav-name">
-      <h2>Anshuman Patel</h2>
-    </div>
-    <div id="nav-sections">
-      <a href="#home" class="nav-link home">Home</a>
-      <a href="#about" class="nav-link about section">About</a>
-      <a href="#skills" class="nav-link skills">Skills</a>
-      <a href="#projects" class="nav-link projects">Projects</a>
-      <a href="#contact" class="nav-link contact">Contact</a>
-      <button id="resume-button-1" class="nav-link resume">
-        <a href="./resume/Anshuman-Patel-Resume.pdf" target="_blank" id="resume-link-1" download="Anshuman-Patel-Resume">Resume</a>
-      </button>
-    </div>
-
-  </nav>
-
-  <!-- Home Section -->
-  <section id="home">
-    <div>
-      <p id="user-detail-name">Anshuman <span>Patel</span></p>
+    <!-- Home Section -->
+    <section id="home">
+      <div>
+        <p id="user-detail-name">Anshuman <span>Patel</span></p>
+        <img src="./images/home/photo.png" alt="" class="home-img" />
+      </div>
+      <hr />
       <div>
         <p id="user-title">Full Stack Web Developer</p>
       </div>
-    </div>
-    <div>
-      <img src="./images/home/photo.png" alt="" class="home-img">
-    </div>
-  </section>
+      <a href="#about" id="down">
+        <img src="./images/home/down-arrow.png" alt="" />
+      </a>
+    </section>
 
-  <!-- About Section  -->
-  <section id="about" class="about section">
-    <p>About <br><span>Me</span></p>
-    <div>
-      <div>
-        <img src="./images/about/megaphone-front-color.png" alt="" id="speaker">
-      </div>
-      <div>
-        <p id="user-detail-intro">A skilled <span>Full Stack Web Developer</span> with hands-on experience in HTML, CSS, Vanilla JS, NodeJS, ExpressJS, and MongoDB. <br><br>
-        Proficient in developing user-friendly web applications. Seeking a challenging role to enhance skills and contribute to the growth of an organization.</p>
-        <span>You can find my resume here</span>
-        <button id="resume-button-2">
-          <img src="./images/about/downloads.png" alt="" id="download-img">
-          <span>Resume</span>
-        </button>
-      </div>
-    </div>
-  </section>
+    <!-- About Section  -->
+    <section id="about" class="about section">
+      <p class="sec">About <br /><span>Me</span></p>
+      <p id="user-detail-intro">
+        Hi, I'm Anshuman Patel, an aspiring full-stack web developer with a
+        background in Civil Engineering from Government College of Engineering,
+        Keonjhar, Odisha.
+        <br />
+        <br />
+        I have worked on several projects and have hands-on experience in HTML,
+        CSS, JavaScript, React for frontend development, and Node.js,
+        Express.js, and databases like MongoDB and MySQL for the backend
+        development.
+        <br />
+        <br />
+        With my additional interest in aesthetic UIs and photography, I create
+        visually appealing user interfaces in my web development projects.
+      </p>
+      <span>You can find my resume here.</span> <br /><br />
+      <a
+        href="./resume/Anshuman-Patel-Resume.pdf"
+        target="_blank"
+        id="resume-link-2"
+        class="resume"
+        download="Anshuman-Patel-Resume"
+        >Resume</a
+      >
+    </section>
 
-  <!-- Skills Section  -->
-  <section id="skills">
-    <p>Skills</p>
-    <div>
-      <p class="skills-head">Technical Skills</p>
-      <div class="skills-icons">
-        <div class="skills-card">
-          <img src="./images/skills/html.PNG" class="skills-card-img">
-          <p class="skills-card-name">HTML</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/js.PNG" class="skills-card-img">
-          <p class="skills-card-name">JavaScript</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/css.PNG" class="skills-card-img">
-          <p class="skills-card-name">CSS</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/react.PNG" class="skills-card-img">
-          <p class="skills-card-name">React</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/nodejs.PNG" class="skills-card-img">
-          <p class="skills-card-name">Node JS</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/express.PNG" class="skills-card-img">
-          <p class="skills-card-name">Express JS</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/mongoose.PNG" class="skills-card-img">
-          <p class="skills-card-name">Mongoose</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/mongodb.PNG" class="skills-card-img">
-          <p class="skills-card-name">Mongo DB</p>
+    <!-- Skills Section  -->
+    <section id="skills">
+      <p class="sec">Skills</p>
+      <div class="skills-sec">
+        <span class="skills-head">Frontend</span>
+        <div class="skills-icons">
+          <div class="skills-card">
+            <img src="./images/skills/html.PNG" class="skills-card-img" />
+            <p class="skills-card-name">HTML</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/css.PNG" class="skills-card-img" />
+            <p class="skills-card-name">CSS</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/js.PNG" class="skills-card-img" />
+            <p class="skills-card-name">JavaScript</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/react.PNG" class="skills-card-img" />
+            <p class="skills-card-name">React</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/ts.PNG" class="skills-card-img" />
+            <p class="skills-card-name">TypeScript</p>
+          </div>
         </div>
       </div>
-      <p class="skills-head">Tools</p>
-      <div class="skills-icons">
-        <div class="skills-card">
-          <img src="./images/skills/postman.PNG" class="skills-card-img">
-          <p class="skills-card-name">Postman</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/cypress.PNG" class="skills-card-img">
-          <p class="skills-card-name">Cypress</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/figma.PNG" class="skills-card-img">
-          <p class="skills-card-name">Figma</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/firebase.PNG" class="skills-card-img">
-          <p class="skills-card-name">Firebase</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/git.PNG" class="skills-card-img">
-          <p class="skills-card-name">Git</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/netlify.PNG" class="skills-card-img">
-          <p class="skills-card-name">Netlify</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/socket.io.PNG" class="skills-card-img">
-          <p class="skills-card-name">Socket.io</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/regex.PNG" class="skills-card-img">
-          <p class="skills-card-name">RegEx</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/oauth.PNG" class="skills-card-img">
-          <p class="skills-card-name">OAuth</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/redis.PNG" class="skills-card-img">
-          <p class="skills-card-name">Redis</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/aws.jpg" class="skills-card-img">
-          <p class="skills-card-name">AWS</p>
+      <br />
+      <div class="skills-sec">
+        <span class="skills-head">Backend</span>
+        <div class="skills-icons">
+          <div class="skills-card">
+            <img src="./images/skills/nodejs.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Node JS</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/express.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Express JS</p>
+          </div>
+          <!-- <div class="skills-card">
+            <img src="./images/skills/mongoose.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Mongoose</p>
+          </div> -->
+          <div class="skills-card">
+            <img src="./images/skills/mongodb.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Mongo DB</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/mysql.PNG" class="skills-card-img" />
+            <p class="skills-card-name">MySQL</p>
+          </div>
         </div>
       </div>
-      <p class="skills-head">Soft Skills</p>
-      <div class="skills-icons">
-        <div class="skills-card">
-          <img src="./images/skills/tm.PNG" class="skills-card-img">
-          <p class="skills-card-name">Time <br> Management</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/tw.PNG" class="skills-card-img">
-          <p class="skills-card-name">Team <br> Work</p>
-        </div>
-        <div class="skills-card">
-          <img src="./images/skills/atd.PNG" class="skills-card-img">
-          <p class="skills-card-name">Attention <br> to Detail</p>
+      <br />
+      <div class="skills-sec">
+        <span class="skills-head">Tools</span>
+        <div class="skills-icons">
+          <div class="skills-card">
+            <img src="./images/skills/postman.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Postman</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/aws.jpg" class="skills-card-img" />
+            <p class="skills-card-name">AWS</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/redis.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Redis</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/socket.io.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Socket.io</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/regex.PNG" class="skills-card-img" />
+            <p class="skills-card-name">RegEx</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/cypress.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Cypress</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/figma.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Figma</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/firebase.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Firebase</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/oauth.PNG" class="skills-card-img" />
+            <p class="skills-card-name">OAuth</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/git.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Git</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/netlify.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Netlify</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+      <br />
+      <div class="skills-sec">
+        <span class="skills-head">Soft Skills</span>
+        <div class="skills-icons">
+          <div class="skills-card">
+            <img src="./images/skills/tm.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Time Management</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/tw.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Team Work</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/adapt.png" class="skills-card-img" />
+            <p class="skills-card-name">Adaptability</p>
+          </div>
+          <div class="skills-card">
+            <img src="./images/skills/atd.PNG" class="skills-card-img" />
+            <p class="skills-card-name">Attention to Detail</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Project Section  -->
-  <section id="projects">
-    <p>Projects</p>
-    <div>
-      <div class="project-card">
-        <div>
-          <img src="./images/projects/cityswagger.png" class="project-image">
-        </div>
-        <div>
-          <p class="project-title">CitySwagger
-            <span>Clone of CharlesTyrwhitt.com</span>
-          </p>
-          <p class="project-description">Charles Tyrwhitt is a British menswear brand known for its high-quality men's shirts, suits, shoes, and accessories.</p>
-          <div class="project-tech-stack">
-            <!-- Tech stck icons & names -->
-            <div class="project-skills-card">
-              <img src="./images/skills/html.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">HTML</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/js.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">JavaScript</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/css.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">CSS</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/nodejs.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">Node JS</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/express.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">Express JS</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/mongodb.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">Mongo DB</p>
+    <!-- Projects Section  -->
+    <section id="projects">
+      <p class="sec">Projects</p>
+      <div class="project-cards-section">
+        <div class="project-card">
+          <div>
+            <img
+              src="./images/projects/cityswagger.png"
+              class="project-image"
+            />
+          </div>
+          <div>
+            <p class="project-title">
+              CitySwagger <br />
+              <span>Clone of CharlesTyrwhitt.com</span>
+            </p>
+            <p class="project-description">
+              Charles Tyrwhitt is a British menswear brand known for its
+              high-quality men's shirts, suits, shoes, and accessories.
+            </p>
+            <div class="project-tech-stack">
+              <!-- Tech stck icons & names -->
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/html.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">HTML</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/js.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">JavaScript</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/css.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">CSS</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/nodejs.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">NodeJS</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/express.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">ExpressJS</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/mongodb.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">MongoDB</p>
+              </div>
             </div>
           </div>
           <div class="project-buttons">
-            <a href="https://cityswagger.netlify.app/" class="project-deployed-link" target="_blank"><button>Live</button></a>
-            <a href="https://github.com/patel-anshuman/CitySwagger---Clone-of-CharlesTyrwhitt.com" class="project-github-link" target="_blank"><button>Github </button></a>
+            <a
+              href="https://github.com/patel-anshuman/CitySwagger---Clone-of-CharlesTyrwhitt.com"
+              class="project-github-link"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              href="https://cityswagger.netlify.app/"
+              class="project-deployed-link"
+              target="_blank"
+              >Live &#x2197;</a
+            >
           </div>
         </div>
-      </div>
-      <div class="project-card">
-        <div>
-          <img src="./images/projects/cityswagger.png" class="project-image">
-        </div>
-        <div>
-          <p class="project-title">CitySwagger
-            <span>Clone of CharlesTyrwhitt.com</span>
-          </p>
-          <p class="project-description">Charles Tyrwhitt is a British menswear brand known for its high-quality men's shirts, suits, shoes, and accessories.</p>
-          <div class="project-tech-stack">
-            <!-- Tech stck icons & names -->
-            <div class="project-skills-card">
-              <img src="./images/skills/html.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">HTML</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/js.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">JavaScript</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/css.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">CSS</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/nodejs.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">Node JS</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/express.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">Express JS</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/mongodb.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">Mongo DB</p>
-            </div>
+        <div class="project-card">
+          <div>
+            <img
+              src="./images/projects/cityswagger.png"
+              class="project-image"
+            />
           </div>
-          <div class="project-buttons">
-            <a href="https://cityswagger.netlify.app/" class="project-deployed-link" target="_blank"><button>Live</button></a>
-            <a href="https://github.com/patel-anshuman/CitySwagger---Clone-of-CharlesTyrwhitt.com" class="project-github-link" target="_blank"><button>Github </button></a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div>
-          <img src="./images/projects/nextdoorby.png" class="project-image">
-        </div>
-        <div>
-          <p class="project-title">NextDoorby <br>
-            <span>Clone of Nearbuy.com</span>
-          </p>
-          <p class="project-description">Nearbuy is an e-commerce platform offering exclusive deals and discounts on food & beverage, beauty & wellness, entertainment and retails.</p>
-          <div class="project-tech-stack">
-            <!-- Tech stck icons & names -->
-            <div class="project-skills-card">
-              <img src="./images/skills/html.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">HTML</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/js.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">JavaScript</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/css.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">CSS</p>
-            </div>
-          </div>
-          <div class="project-buttons">
-            <a href="https://nextdoorby.netlify.app/" class="project-deployed-link" target="_blank"><button>Live</button></a>
-            <a href="https://github.com/simran0469/knowledgeable-skate-930" class="project-github-link" target="_blank"><button>Github </button></a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div>
-          <img src="./images/projects/mileroad.png" class="project-image">
-        </div>
-        <div>
-          <p class="project-title">MileRoad <br>
-            <span>Clone of Limeroad.com</span>
-          </p>
-          <p class="project-description">An e-commerce website that deals in clothing and accessories for women, men and kids.</p>
-          <div class="project-tech-stack">
-            <!-- Tech stck icons & names -->
-            <div class="project-skills-card">
-              <img src="./images/skills/html.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">HTML</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/js.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">JavaScript</p>
-            </div>
-            <div class="project-skills-card">
-              <img src="./images/skills/css.PNG" class="project-skills-card-img">
-              <p class="project-skills-card-name">CSS</p>
+          <div>
+            <p class="project-title">
+              API Labs <br />
+              <span>Clone of Postman API Tool</span>
+            </p>
+            <p class="project-description">
+              Charles Tyrwhitt is a British menswear brand known for its
+              high-quality men's shirts, suits, shoes, and accessories.
+            </p>
+            <div class="project-tech-stack">
+              <!-- Tech stck icons & names -->
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/html.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">HTML</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/js.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">JavaScript</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/css.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">CSS</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/nodejs.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">NodeJS</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/express.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">ExpressJS</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/mongodb.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">MongoDB</p>
+              </div>
             </div>
           </div>
           <div class="project-buttons">
-            <a href="https://mileroad.netlify.app/" class="project-deployed-link" target="_blank"><button>Live</button></a>
-            <a href="https://github.com/patel-anshuman/MileRoad---Clone-of-Limeroad.com" class="project-github-link" target="_blank"><button>Github </button></a>
+            <a
+              href="https://github.com/patel-anshuman/CitySwagger---Clone-of-CharlesTyrwhitt.com"
+              class="project-github-link"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              href="https://cityswagger.netlify.app/"
+              class="project-deployed-link"
+              target="_blank"
+              >Live &#x2197;</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div>
+            <img
+              src="./images/projects/cityswagger.png"
+              class="project-image"
+            />
+          </div>
+          <div>
+            <p class="project-title">
+              CitySwagger <br />
+              <span>Clone of CharlesTyrwhitt.com</span>
+            </p>
+            <p class="project-description">
+              Charles Tyrwhitt is a British menswear brand known for its
+              high-quality men's shirts, suits, shoes, and accessories.
+            </p>
+            <div class="project-tech-stack">
+              <!-- Tech stck icons & names -->
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/html.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">HTML</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/js.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">JavaScript</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/css.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">CSS</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/nodejs.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">NodeJS</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/express.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">ExpressJS</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/mongodb.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">MongoDB</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-buttons">
+            <a
+              href="https://github.com/patel-anshuman/CitySwagger---Clone-of-CharlesTyrwhitt.com"
+              class="project-github-link"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              href="https://cityswagger.netlify.app/"
+              class="project-deployed-link"
+              target="_blank"
+              >Live &#x2197;</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div>
+            <img src="./images/projects/nextdoorby.png" class="project-image" />
+          </div>
+          <div>
+            <p class="project-title">
+              NextDoorby <br />
+              <span>Clone of Nearbuy.com</span>
+            </p>
+            <p class="project-description">
+              Nearbuy is an e-commerce platform offering exclusive deals and
+              discounts on food & beverage, beauty & wellness, entertainment and
+              retails.
+            </p>
+            <div class="project-tech-stack">
+              <!-- Tech stck icons & names -->
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/html.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">HTML</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/js.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">JavaScript</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/css.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">CSS</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-buttons">
+            <a
+              href="https://github.com/patel-anshuman/CitySwagger---Clone-of-CharlesTyrwhitt.com"
+              class="project-github-link"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              href="https://cityswagger.netlify.app/"
+              class="project-deployed-link"
+              target="_blank"
+              >Live &#x2197;</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div>
+            <img src="./images/projects/mileroad.png" class="project-image" />
+          </div>
+          <div>
+            <p class="project-title">
+              MileRoad <br />
+              <span>Clone of Limeroad.com</span>
+            </p>
+            <p class="project-description">
+              An e-commerce website that deals in clothing and accessories for
+              women, men and kids.
+            </p>
+            <div class="project-tech-stack">
+              <!-- Tech stck icons & names -->
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/html.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">HTML</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/js.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">JavaScript</p>
+              </div>
+              <div class="project-skills-card">
+                <img
+                  src="./images/skills/css.PNG"
+                  class="project-skills-card-img"
+                />
+                <p class="project-skills-card-name">CSS</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-buttons">
+            <a
+              href="https://github.com/patel-anshuman/CitySwagger---Clone-of-CharlesTyrwhitt.com"
+              class="project-github-link"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              href="https://cityswagger.netlify.app/"
+              class="project-deployed-link"
+              target="_blank"
+              >Live &#x2197;</a
+            >
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Statistics Section  -->
-  <section id="statistics">
-    <p>Statistics</p>
-    <div>
-      <div class="react-activity-calendar calendar"></div>
-      <div>
-        <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=patel-anshuman&theme=transparent&border_radius=10" alt="GitHub Streak Stats">
+    <!-- Statistics Section  -->
+    <section id="statistics">
+      <p class="sec">Statistics</p>
+      <div class="statistics-cards-section">
+        <div class="react-activity-calendar calendar"></div>
+        <div>
+          <img
+            id="github-stats-card"
+            src="https://github-readme-stats.vercel.app/api?username=patel-anshuman&show_icons=true&theme=transparent"
+            alt="GitHub Stats Card"
+          />
+          <img
+            id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=patel-anshuman&theme=transparent&border_radius=10"
+            alt="GitHub Streak Stats"
+          />
+          <img
+            id="github-top-langs"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=patel-anshuman&layout=compact&theme=transparent"
+            alt="GitHub Top Langs"
+          />
+        </div>
       </div>
-      <div>
-        <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=patel-anshuman&layout=compact" alt="GitHub Top Langs">
-      </div>
-      <div>
-        <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=patel-anshuman&show_icons=true&theme=transparent" alt="GitHub Stats Card">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section  -->
-  
-  <section id="contact">
-    <p>Contact</p>
-    <div>
-      <div id="contact-image">
-        <img src="./images/contact/boy-front-color.png" alt="Contact Icon">
-      </div>
+    <!-- Contact Section  -->
+    <section id="contact">
+      <p class="sec">Contact</p>
       <div id="contact-details">
-        <div >
-          <label>Email:</label>
-          <span id="contact-email"><a href="mailto:patelanshuman6@gmail.com">patelanshuman6@gmail.com</a></span>
-          <!--  -->
-        </div>
         <div>
-          <label>Phone:</label>
-          <span id="contact-phone"><a href="tel:+917008157930">+91 7008157930</a></span>
-          <!--  -->
-        </div>
-        <div>
-          <label>Address:</label>
-          <span id="contact-address">Sambalpur, Odisha - 768221</span>
-        </div>
-        <!-- <div>
-          <i class="fa fa-github"></i>
-          <a href="https://github.com/patel-anshuman" target="_blank">patel-anshuman</a>
-        </div>
-        <div>
-          <i class="fa fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/patel-anshuman/" target="_blank">patel-anshuman</a>
-        </div> -->
+          <div >
+            <label>Email:</label>
+            <span id="contact-email"><a href="mailto:patelanshuman6@gmail.com">patelanshuman6@gmail.com</a></span>
+            <!--  -->
+          </div>
+          <br>
+          <div>
+            <label>Phone:</label>
+            <span id="contact-phone"><a href="tel:+917008157930">+91 7008 157 930</a></span>
+            <!--  -->
+          </div>
+          <br>
+          <div>
+            <label>Address:</label>
+            <span id="contact-address">Sambalpur, Odisha - 768221</span>
+          </div>
+        </div>        
         <div id="contact-buttons">
           <a href="https://github.com/patel-anshuman/" target="_blank">
             <button id="contact-github">
-              <span><img src="./images/contact/github.png" alt=""></span>
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+              </span>
               <span>patel-anshuman</span>
             </button>
           </a>
+          
           <a href="https://www.linkedin.com/in/patel-anshuman/" target="_blank">
             <button id="contact-linkedin">
-              <span><img src="./images/contact/linkedin.png" alt=""></span>
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+              </span>
               <span>patel-anshuman</span>
             </button>
           </a>
         </div>
       </div>
-    </div>
-    <br>
-    <hr>
-    <h4>Made with &#x2665 by Anshuman</h4>
-  </section>
+      <br>
+      <hr>
+      <h4>Made with &#x2665 by Anshuman</h4>
+    </section>
 
-  
-  
+    <!-- Go to Top button  -->
+    <a href="#home" id="top-button">
+      <img src="./images/home/up-arrow.png" alt="&uarr;" />
+    </a>
+  </body>
 
-</body>
-<script>
-  //---------------------------- Resume Buttons-----------------------
-  document.getElementById("resume-button-1").addEventListener("click", () => {
-    window.open("./resume/Anshuman-Patel-Resume.pdf", "_blank");
-    var link = document.createElement("a");
-    link.href = "./resume/Anshuman-Patel-Resume.pdf";
-    link.target = "_blank";
-    link.download = "Anshuman-Patel-Resume.pdf";
-    link.click();
-  });
-
-  document.getElementById("resume-button-2").addEventListener("click", () => {
-    window.open("./resume/Anshuman-Patel-Resume.pdf", "_blank");
-    var link = document.createElement("a");
-    link.href = "./resume/Anshuman-Patel-Resume.pdf";
-    link.target = "_blank";
-    link.download = "Anshuman-Patel-Resume.pdf";
-    link.click();
-  });
-
-  //---------------------------- Github Calendar------------------------
-  GitHubCalendar(".calendar", "patel-anshuman", { responsive: true });
-
-  //---------------------------------NavBar-----------------------------
-  
-</script>
+  <script>
+    // -----------------GitHub Calendar--------------------
+    GitHubCalendar(".calendar", "patel-anshuman", { responsive: true });
+  </script>
 </html>
