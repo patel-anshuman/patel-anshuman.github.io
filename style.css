@@ -567,6 +567,10 @@ body {
 .react-activity-calendar {
     padding: 5px 30px;
     width: 86%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #statistics>p:nth-child(1) {
@@ -588,6 +592,10 @@ body {
 
 .statistics-cards-section>div:nth-child(2)>img {
     height: 180px;
+}
+
+.calendar > img {
+    width: 100%;
 }
 
 /*------------------------ Contact Section ------------------------- */

@@ -566,12 +566,10 @@
     <section id="statistics">
       <p class="sec">Statistics</p>
       <div class="statistics-cards-section">
-        <div class="react-activity-calendar calendar"></div>
-        <!-- <div class="react-activity-calendar calendar">
-            <img src="https://ghchart.rshah.org/304
-            9EEL/patel-anshuman alt="Github
-            chart" />
-        </div> -->
+        <!-- <div class="react-activity-calendar calendar"></div> -->
+        <div class="react-activity-calendar calendar">
+            <img src="https://ghchart.rshah.org/patel-anshuman" alt="Github Calendar" />
+        </div>
         <div>
           <img
             id="github-stats-card"
@@ -681,7 +679,7 @@
 
   <script>
     // -----------------GitHub Calendar--------------------
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", () => {
         GitHubCalendar(".calendar", "patel-anshuman", { responsive: true });
     });
 
