@@ -53,6 +53,12 @@
           <a id="resume-link-1">Resume</a>
         </button>
       </div>
+      <div id="hamburger-icon">
+        <img src="./images/navbar/hamburger2.png" alt="Hamburger Menu" />
+      </div>
+      <div id="close-icon">
+        <img src="./images/navbar/close.png" alt="Close" />
+      </div>
     </nav>
 
     <!-- Home Section -->
@@ -668,6 +674,62 @@
       <h4>Made with &#x2665 by Anshuman</h4>
     </section>
 
+    <!-- Hamburger menu  -->
+    <div id="dropdown-menu">
+      <a href="#home" class="drop-link">Home</a>
+      <a href="#about" class="drop-link">About</a>
+      <a href="#skills" class="drop-link">Skills</a>
+      <a href="#projects" class="drop-link">Projects</a>
+      <a href="#statistics" class="drop-link">GitStats</a>
+      <a href="#contact" class="drop-link">Contact</a>
+      <button id="resume-button-3" class="drop-link resume">
+        <a id="resume-link-3">Resume</a>
+      </button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      // Function to toggle the dropdown menu and icons
+      function toggleMenu() {
+        $('#dropdown-menu').toggle();
+        $('#hamburger-icon, #close-icon').toggle();
+        if ($('#close-icon').is(':visible')) {
+          $('#nav-menu').css('backdrop-filter', 'blur(10px)');
+        } else {
+          $('#nav-menu').css('backdrop-filter', 'none');
+        }
+      }
+
+      // Hide the close icon by default
+      $('#close-icon').hide();
+
+      // Show the dropdown menu and toggle the icons on clicking the hamburger icon
+      $('#hamburger-icon').click(function() {
+        toggleMenu();
+      });
+
+      // Hide the dropdown menu and toggle the icons on clicking the close icon
+      $('#close-icon').click(function() {
+        toggleMenu();
+      });
+
+      // Handle click events for the links inside the dropdown menu
+      $('#dropdown-menu a').click(function() {
+        // Close the dropdown menu and toggle the icons
+        toggleMenu();
+
+        // Scroll to the target section smoothly
+        const target = $(this).attr('href');
+        $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 800);
+
+        // Prevent the default link behavior
+        return false;
+      });
+    });
+    </script>
+
     <!-- Go to Top button  -->
     <a href="#home" id="top-button">
       <img src="./images/home/up-arrow.png" alt="&uarr;" />
@@ -691,6 +753,15 @@
     });
 
     document.getElementById("resume-button-2").addEventListener("click", () => {
+        window.open("./resume/Anshuman-Patel-Resume.pdf", "_blank");
+        var link = document.createElement("a");
+        link.href = "./resume/Anshuman-Patel-Resume.pdf";
+        link.target = "_blank";
+        link.download = "Anshuman-Patel-Resume.pdf";
+        link.click();
+    });
+
+    document.getElementById("resume-button-3").addEventListener("click", () => {
         window.open("./resume/Anshuman-Patel-Resume.pdf", "_blank");
         var link = document.createElement("a");
         link.href = "./resume/Anshuman-Patel-Resume.pdf";
