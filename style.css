@@ -123,6 +123,7 @@ body {
         width: 40px;
         aspect-ratio: 1/1;
         cursor: pointer;
+        
     }
 
     #dropdown-menu {
@@ -148,8 +149,8 @@ body {
         text-decoration: none;
         color: #000;
     }
-    
-    
+
+
     .drop-link:hover {
         background-color: black;
         color: white;
@@ -169,6 +170,7 @@ body {
         width: 33px;
         aspect-ratio: 1/1;
     }
+
     #resume-button-3 {
         height: 40px;
         width: 100%;
@@ -176,11 +178,13 @@ body {
         background-color: transparent;
         padding: 0px;
     }
+
     #resume-button-3:hover {
         border: 1px solid transparent;
         background-color: #c3eee4;
         transition: 0.3s;
     }
+
     #resume-link-3 {
         /* border: 1px solid blue; */
         padding: 8px 45%;
@@ -198,6 +202,7 @@ body {
         top: 7dvh;
         width: 94.3%;
     }
+
     #resume-link-3 {
         /* border: 1px solid blue; */
         padding: 8px 40%;
@@ -246,7 +251,10 @@ body {
     /* border: 2px solid red; */
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
-
+    background-image: url("./images/home/blob-scene-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
 }
 
 #home>div:nth-child(1) {
@@ -347,7 +355,6 @@ body {
     .home-img {
         width: 150px;
         height: 150px;
-        border-radius: 50%;
         border: 7px solid white;
     }
 
@@ -365,7 +372,6 @@ body {
     .home-img {
         width: 120px;
         height: 120px;
-        border-radius: 50%;
         border: 8px double white;
     }
 
@@ -380,6 +386,9 @@ body {
 }
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
+    #home {
+        background-image: url("./images/home/blob-scene-haikei\ \(1\).svg");
+    }
     #home>div:nth-child(1) {
         width: 80%;
         display: flex;
@@ -397,12 +406,7 @@ body {
     .home-img {
         width: 200px;
         height: 200px;
-        border-radius: 50%;
         border: 8px double white;
-        /* -webkit-mask-image: url();
-        mask-image: url();
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat; */
     }
 
     #user-detail-name {
