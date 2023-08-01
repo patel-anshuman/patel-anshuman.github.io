@@ -387,7 +387,7 @@ body {
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
     #home {
-        background-image: url("./images/home/blob-scene-haikei\ \(1\).svg");
+        background-image: url("./images/home/blob-scene-haikei-v.svg");
     }
     #home>div:nth-child(1) {
         width: 80%;
