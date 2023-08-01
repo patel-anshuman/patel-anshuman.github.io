@@ -694,9 +694,19 @@
         $('#dropdown-menu').toggle();
         $('#hamburger-icon, #close-icon').toggle();
         if ($('#close-icon').is(':visible')) {
-          $('#nav-menu').css('backdrop-filter', 'blur(10px)');
+          $('#nav-menu').css({
+            'backdrop-filter': 'blur(10px)',
+            'background-color': 'rgba(255, 255, 255, 0.8)'
+          });
+          $('#dropdown-menu').css({
+            'backdrop-filter': 'blur(10px)',
+            'background-color': 'rgba(255, 255, 255, 0.8)'
+          });
         } else {
-          $('#nav-menu').css('backdrop-filter', 'none');
+          $('#nav-menu').css({
+            'backdrop-filter': 'none',
+            'background-color': 'transparent'
+          });
         }
       }
 
