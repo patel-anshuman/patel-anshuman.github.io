@@ -251,7 +251,7 @@ body {
     /* border: 2px solid red; */
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
-    background-image: url("./images/home/blob-scene-haikei.svg");
+    background-image: url("./images/home/wave-haikei-2.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
@@ -387,7 +387,7 @@ body {
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
     #home {
-        background-image: url("./images/home/blob-scene-haikei-v.svg");
+        background-image: url("./images/home/wave-haikei-2.svg");
     }
     #home>div:nth-child(1) {
         width: 80%;
