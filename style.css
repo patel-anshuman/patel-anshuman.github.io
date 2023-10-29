@@ -255,6 +255,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
+    box-sizing: border-box;
 }
 
 #home>div:nth-child(1) {
@@ -451,14 +452,30 @@ body {
 #user-detail-intro {
     width: 50%;
     margin-top: 5dvh;
-    margin-bottom: 60px;
+    /* margin-bottom: 0px; */
     /* background-image: url(./images/about/circuit.svg); */
 
 }
 
-@media screen and (max-width: 700px) {
+#user-detail-intro br {
+    height: 0.5em;
+}
+
+@media screen and (max-width: 1200px) {
+    #user-detail-intro {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     #user-detail-intro {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #user-detail-intro {
+        font-size: 16px;
     }
 }
 
@@ -617,7 +634,7 @@ body {
         font-size: 16px;
         padding-inline: 12px;
         line-height: 1.2;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
     }
 
     #skills>p:nth-child(1) {
@@ -791,6 +808,7 @@ body {
 
 .project-image {
     border-radius: 5px 5px 0px 0px;
+    border-bottom: 3px solid #333;
 }
 
 .project-buttons {
