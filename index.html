@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Anshuman Patel - Full Stack Web Developer specializing in React, Node.js, and modern web technologies.">
+    <meta name="keywords" content="web developer, full stack developer, react, nodejs, javascript, portfolio">
+    <meta name="author" content="Anshuman Patel">
     <link
       rel="shortcut icon"
       href="./images/AP_favicon_2.png"
@@ -14,8 +17,8 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Portfolio • Anshuman Patel">
     <meta property="og:description" content="Full Stack Web Developer">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="patel-anshuman.github.io/">
+    <meta property="og:image" content="./images/home/photo.jpg">
+    <meta property="og:url" content="https://patel-anshuman.github.io/">
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +26,59 @@
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
+      media="print" onload="this.media='all'"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Groote:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print" onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Groote:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link rel="preload" href="./images/home/photo.jpg" as="image" />
+    <link rel="preload" href="./images/home/wave-haikei-2.svg" as="image" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//ghchart.rshah.org">
+    <link rel="dns-prefetch" href="//github-readme-stats.vercel.app">
+    <link rel="dns-prefetch" href="//github-readme-streak-stats.herokuapp.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Anshuman Patel",
+      "jobTitle": "Full Stack Web Developer",
+      "description": "Full Stack Web Developer specializing in React, Node.js, and modern web technologies",
+      "url": "https://patel-anshuman.github.io",
+      "image": "https://patel-anshuman.github.io/images/home/photo.jpg",
+      "email": "patelanshuman6@gmail.com",
+      "telephone": "+917008157930",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sambalpur",
+        "addressRegion": "Odisha",
+        "postalCode": "768221",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://github.com/patel-anshuman",
+        "https://www.linkedin.com/in/patel-anshuman/"
+      ],
+      "knowsAbout": [
+        "JavaScript", "React", "Node.js", "Express.js", "MongoDB", "MySQL", "Python", "Flask", "HTML", "CSS", "TypeScript"
+      ]
+    }
+    </script>
     <!-- ------------GitHub Calendar------------ -->
     <!-- <link
       rel="stylesheet"
@@ -38,17 +93,17 @@
   <body>
     <!-- <div id="background-image"></div> -->
     <!-- Navbar -->
-    <nav id="nav-menu">
-      <a href="">
-        <img src="./images/AP_favicon_2.png" alt="" />
+    <nav id="nav-menu" role="navigation" aria-label="Main navigation">
+      <a href="#home" aria-label="Home">
+        <img src="./images/AP_favicon_2.png" alt="Anshuman Patel Logo" />
       </a>
-      <div id="nav-sections">
-        <a href="#home" class="nav-link home">Home</a>
-        <a href="#about" class="nav-link about section">About</a>
-        <a href="#skills" class="nav-link skills">Skills</a>
-        <a href="#projects" class="nav-link projects">Projects</a>
-        <a href="#statistics" class="nav-link statistics">GitStats</a>
-        <a href="#contact" class="nav-link contact">Contact</a>
+      <div id="nav-sections" role="menubar">
+        <a href="#home" class="nav-link home" role="menuitem">Home</a>
+        <a href="#about" class="nav-link about section" role="menuitem">About</a>
+        <a href="#skills" class="nav-link skills" role="menuitem">Skills</a>
+        <a href="#projects" class="nav-link projects" role="menuitem">Projects</a>
+        <a href="#statistics" class="nav-link statistics" role="menuitem">GitStats</a>
+        <a href="#contact" class="nav-link contact" role="menuitem">Contact</a>
         <button id="resume-button-1" class="nav-link resume">
           <a id="resume-link-1">Resume</a>
         </button>
@@ -62,22 +117,22 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home">
+    <section id="home" role="banner">
       <div>
         <p id="user-detail-name">Anshuman <span>Patel</span></p>
-        <img src="./images/home/photo.jpg" alt="" class="home-img" />
+        <img src="./images/home/photo.jpg" alt="Anshuman Patel - Full Stack Web Developer" class="home-img" />
       </div>
       <hr />
       <div>
         <p id="user-title">Full Stack Web Developer</p>
       </div>
-      <a href="#about" id="down">
-        <img src="./images/home/down-arrow.png" alt="about" />
+      <a href="#about" id="down" aria-label="Scroll to About section">
+        <img src="./images/home/down-arrow.png" alt="Scroll down to About section" />
       </a>
     </section>
 
     <!-- About Section  -->
-    <section id="about" class="about section">
+    <section id="about" class="about section" role="main">
       <p class="sec">About <br /><span>Me</span></p>
       <p id="user-detail-intro">
         Hi, I'm Anshuman Patel, an aspiring full-stack web developer with a
@@ -98,30 +153,30 @@
     </section>
 
     <!-- Skills Section  -->
-    <section id="skills">
+    <section id="skills" role="main">
       <p class="sec">Skills</p>
       <!-- Frontend -->
       <div class="skills-sec">
         <span class="skills-head">Frontend</span>
         <div class="skills-icons">
           <div class="skills-card">
-            <img src="./images/skills/html.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/html.PNG" class="skills-card-img" loading="lazy" alt="HTML5" />
             <p class="skills-card-name">HTML</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/css.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/css.PNG" class="skills-card-img" loading="lazy" alt="CSS3" />
             <p class="skills-card-name">CSS</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/js.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/js.PNG" class="skills-card-img" loading="lazy" alt="JavaScript" />
             <p class="skills-card-name">JavaScript</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/react.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/react.PNG" class="skills-card-img" loading="lazy" alt="React" />
             <p class="skills-card-name">React</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/ts.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/ts.PNG" class="skills-card-img" loading="lazy" alt="TypeScript" />
             <p class="skills-card-name">TypeScript</p>
           </div>
         </div>
@@ -132,27 +187,27 @@
         <span class="skills-head">Backend</span>
         <div class="skills-icons">
           <div class="skills-card">
-            <img src="./images/skills/nodejs.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/nodejs.PNG" class="skills-card-img" loading="lazy" alt="Node.js" />
             <p class="skills-card-name">NodeJS</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/express.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/express.PNG" class="skills-card-img" loading="lazy" alt="Express.js" />
             <p class="skills-card-name">ExpressJS</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/python.JPG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/python.JPG" class="skills-card-img" loading="lazy" alt="Python" />
             <p class="skills-card-name">Python</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/flask.JPG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/flask.JPG" class="skills-card-img" loading="lazy" alt="Flask" />
             <p class="skills-card-name">Flask</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/mongodb.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/mongodb.PNG" class="skills-card-img" loading="lazy" alt="MongoDB" />
             <p class="skills-card-name">MongoDB</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/mysql.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/mysql.PNG" class="skills-card-img" loading="lazy" alt="MySQL" />
             <p class="skills-card-name">MySQL</p>
           </div>
         </div>
@@ -163,27 +218,27 @@
         <span class="skills-head">Tools</span>
         <div class="skills-icons">
           <div class="skills-card">
-            <img src="./images/skills/postman.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/postman.PNG" class="skills-card-img" loading="lazy" alt="Postman" />
             <p class="skills-card-name">Postman</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/openai.JPG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/openai.JPG" class="skills-card-img" loading="lazy" alt="OpenAI" />
             <p class="skills-card-name">OpenAI</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/aws.jpg" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/aws.jpg" class="skills-card-img" loading="lazy" alt="AWS" />
             <p class="skills-card-name">AWS</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/redis.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/redis.PNG" class="skills-card-img" loading="lazy" alt="Redis" />
             <p class="skills-card-name">Redis</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/socket.io.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/socket.io.PNG" class="skills-card-img" loading="lazy" alt="Socket.io" />
             <p class="skills-card-name">Socket.io</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/regex.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/regex.PNG" class="skills-card-img" loading="lazy" alt="Regular Expressions" />
             <p class="skills-card-name">RegEx</p>
           </div>
           <!-- <div class="skills-card">
@@ -191,31 +246,31 @@
             <p class="skills-card-name">Cypress</p>
           </div> -->
           <div class="skills-card">
-            <img src="./images/skills/figma.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/figma.PNG" class="skills-card-img" loading="lazy" alt="Figma" />
             <p class="skills-card-name">Figma</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/chakraui.jpg" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/chakraui.jpg" class="skills-card-img" loading="lazy" alt="Chakra UI" />
             <p class="skills-card-name">Chakra UI</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/oauth.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/oauth.PNG" class="skills-card-img" loading="lazy" alt="OAuth" />
             <p class="skills-card-name">OAuth</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/git.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/git.PNG" class="skills-card-img" loading="lazy" alt="Git" />
             <p class="skills-card-name">Git</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/netlify.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/netlify.PNG" class="skills-card-img" loading="lazy" alt="Netlify" />
             <p class="skills-card-name">Netlify</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/vercel.JPG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/vercel.JPG" class="skills-card-img" loading="lazy" alt="Vercel" />
             <p class="skills-card-name">Vercel</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/cyclic.JPG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/cyclic.JPG" class="skills-card-img" loading="lazy" alt="Cyclic" />
             <p class="skills-card-name">Cyclic</p>
           </div>
         </div>
@@ -226,19 +281,19 @@
         <span class="skills-head">Soft Skills</span>
         <div class="skills-icons">
           <div class="skills-card">
-            <img src="./images/skills/tw.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/tw.PNG" class="skills-card-img" loading="lazy" alt="Team Work" />
             <p class="skills-card-name">Team Work</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/atd.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/atd.PNG" class="skills-card-img" loading="lazy" alt="Attention to Detail" />
             <p class="skills-card-name">Attention to Detail</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/tm.PNG" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/tm.PNG" class="skills-card-img" loading="lazy" alt="Time Management" />
             <p class="skills-card-name">Time Management</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/adapt.png" class="skills-card-img" loading="lazy" />
+            <img src="./images/skills/adapt.png" class="skills-card-img" loading="lazy" alt="Adaptability" />
             <p class="skills-card-name">Adaptability</p>
           </div>
         </div>
@@ -246,7 +301,7 @@
     </section>
 
     <!-- Projects Section  -->
-    <section id="projects">
+    <section id="projects" role="main">
       <p class="sec">Projects</p>
       <div class="project-cards-section">
         <div class="project-card">
@@ -254,6 +309,8 @@
             <img
               src="./images/projects/shotspotter.png"
               class="project-image"
+              alt="ShotSpotter - Photographer Booking Web App"
+              loading="lazy"
             />
           </div>
           <div>
@@ -323,6 +380,8 @@
             <img
               src="./images/projects/medimate.png"
               class="project-image"
+              alt="MediMate - Health Assist AI ChatBot"
+              loading="lazy"
             />
           </div>
           <div>
@@ -399,6 +458,8 @@
             <img
               src="./images/projects/cityswagger.png"
               class="project-image"
+              alt="CitySwagger - CharlesTyrwhitt.com Clone"
+              loading="lazy"
             />
           </div>
           <div>
@@ -475,6 +536,8 @@
             <img
               src="./images/projects/code_converter.png"
               class="project-image"
+              alt="Code Converter - Convert Language, Debug, Check Quality"
+              loading="lazy"
             />
           </div>
           <div>
@@ -537,6 +600,8 @@
             <img
               src="./images/projects/glamconnect.png"
               class="project-image"
+              alt="GlamConnect - Beauty Booking Web App"
+              loading="lazy"
             />
           </div>
           <div>
@@ -606,6 +671,8 @@
             <img
               src="./images/projects/apilabs.png"
               class="project-image"
+              alt="API Labs - Postman API Platform Clone"
+              loading="lazy"
             />
           </div>
           <div>
@@ -679,7 +746,7 @@
         </div>
         <div class="project-card">
           <div>
-            <img src="./images/projects/nextdoorby.png" class="project-image" />
+            <img src="./images/projects/nextdoorby.png" class="project-image" alt="NextDoorby - NearBuy.com Clone" loading="lazy" />
           </div>
           <div>
             <p class="project-title">
@@ -731,7 +798,7 @@
         </div>
         <div class="project-card">
           <div>
-            <img src="./images/projects/mileroad.png" class="project-image" />
+            <img src="./images/projects/mileroad.png" class="project-image" alt="MileRoad - Limeroad.com Clone" loading="lazy" />
           </div>
           <div>
             <p class="project-title">
@@ -784,28 +851,31 @@
     </section>
 
     <!-- Statistics Section  -->
-    <section id="statistics">
+    <section id="statistics" role="main">
       <p class="sec">Statistics</p>
       <div class="statistics-cards-section">
         
         <div class="react-activity-calendar calendar">
-            <img src="https://ghchart.rshah.org/patel-anshuman" alt="Github Calendar" />
+            <img src="https://ghchart.rshah.org/patel-anshuman" alt="GitHub Activity Calendar for patel-anshuman" loading="lazy" />
         </div>
         <div>
           <img
             id="github-stats-card"
             src="https://github-readme-stats.vercel.app/api?username=patel-anshuman&show_icons=true&theme=transparent"
-            alt="GitHub Stats Card"
+            alt="GitHub Statistics for patel-anshuman"
+            loading="lazy"
           />
           <img
             id="github-streak-stats"
             src="https://github-readme-streak-stats.herokuapp.com/?user=patel-anshuman&theme=transparent&border_radius=10"
-            alt="GitHub Streak Stats"
+            alt="GitHub Contribution Streak for patel-anshuman"
+            loading="lazy"
           />
           <img
             id="github-top-langs"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=patel-anshuman&layout=compact&theme=transparent"
-            alt="GitHub Top Langs"
+            alt="Top Programming Languages for patel-anshuman"
+            loading="lazy"
           />
         </div>
       </div>
@@ -813,7 +883,7 @@
     <!-- <div class="react-activity-calendar calendar"></div> -->
 
     <!-- Contact Section  -->
-    <section id="contact">
+    <section id="contact" role="main">
       <p class="sec">Contact</p>
       <div id="contact-details">
         <div>
@@ -890,110 +960,144 @@
     </section>
 
     <!-- Hamburger menu  -->
-    <div id="dropdown-menu">
-      <a href="#home" class="drop-link">Home</a>
-      <a href="#about" class="drop-link">About</a>
-      <a href="#skills" class="drop-link">Skills</a>
-      <a href="#projects" class="drop-link">Projects</a>
-      <a href="#statistics" class="drop-link">GitStats</a>
-      <a href="#contact" class="drop-link">Contact</a>
+    <div id="dropdown-menu" role="menu" aria-label="Mobile navigation menu">
+      <a href="#home" class="drop-link" role="menuitem">Home</a>
+      <a href="#about" class="drop-link" role="menuitem">About</a>
+      <a href="#skills" class="drop-link" role="menuitem">Skills</a>
+      <a href="#projects" class="drop-link" role="menuitem">Projects</a>
+      <a href="#statistics" class="drop-link" role="menuitem">GitStats</a>
+      <a href="#contact" class="drop-link" role="menuitem">Contact</a>
       <button id="resume-button-3" class="drop-link resume">
         <a id="resume-link-3">Resume</a>
       </button>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-    $(document).ready(function() {
+    document.addEventListener('DOMContentLoaded', function() {
+      const dropdownMenu = document.getElementById('dropdown-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+      const navMenu = document.getElementById('nav-menu');
+      
       // Function to toggle the dropdown menu and icons
       function toggleMenu() {
-        $('#dropdown-menu').toggle();
-        $('#hamburger-icon, #close-icon').toggle();
-        if ($('#close-icon').is(':visible')) {
-          $('#nav-menu').css({
-            'backdrop-filter': 'blur(10px)',
-            'background-color': 'rgba(255, 255, 255, 0.8)'
-          });
-          $('#dropdown-menu').css({
-            'backdrop-filter': 'blur(10px)',
-            'background-color': 'rgba(255, 255, 255, 0.8)'
-          });
+        const isVisible = dropdownMenu.style.display === 'block';
+        dropdownMenu.style.display = isVisible ? 'none' : 'block';
+        hamburgerIcon.style.display = isVisible ? 'flex' : 'none';
+        closeIcon.style.display = isVisible ? 'none' : 'flex';
+        
+        if (!isVisible) {
+          navMenu.style.backdropFilter = 'blur(10px)';
+          navMenu.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+          dropdownMenu.style.backdropFilter = 'blur(10px)';
+          dropdownMenu.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
         } else {
-          $('#nav-menu').css({
-            'backdrop-filter': 'none',
-            'background-color': 'transparent'
-          });
+          navMenu.style.backdropFilter = 'none';
+          navMenu.style.backgroundColor = 'transparent';
         }
       }
 
       // Hide the close icon by default
-      $('#close-icon').hide();
+      closeIcon.style.display = 'none';
 
       // Show the dropdown menu and toggle the icons on clicking the hamburger icon
-      $('#hamburger-icon').click(function() {
-        toggleMenu();
-      });
+      hamburgerIcon.addEventListener('click', toggleMenu);
 
       // Hide the dropdown menu and toggle the icons on clicking the close icon
-      $('#close-icon').click(function() {
-        toggleMenu();
-      });
+      closeIcon.addEventListener('click', toggleMenu);
 
       // Handle click events for the links inside the dropdown menu
-      $('#dropdown-menu a').click(function() {
-        // Close the dropdown menu and toggle the icons
-        toggleMenu();
+      const dropdownLinks = dropdownMenu.querySelectorAll('a');
+      dropdownLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          // Close the dropdown menu and toggle the icons
+          toggleMenu();
 
-        // Scroll to the target section smoothly
-        const target = $(this).attr('href');
-        $('html, body').animate({
-          scrollTop: $(target).offset().top
-        }, 800);
+          // Scroll to the target section smoothly
+          const target = this.getAttribute('href');
+          if (target && target.startsWith('#')) {
+            const targetElement = document.querySelector(target);
+            if (targetElement) {
+              targetElement.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }
 
-        // Prevent the default link behavior
-        return false;
+          // Prevent the default link behavior
+          e.preventDefault();
+        });
       });
     });
     </script>
 
     <!-- Go to Top button  -->
-    <a href="#home" id="top-button">
-      <img src="./images/home/up-arrow.png" alt="&uarr;" />
+    <a href="#home" id="top-button" aria-label="Back to top">
+      <img src="./images/home/up-arrow.png" alt="Back to top" />
     </a>
   </body>
 
   <script>
-    // -----------------GitHub Calendar--------------------
-    // document.addEventListener("DOMContentLoaded", () => {
-    //     GitHubCalendar(".calendar", "patel-anshuman", { responsive: true });
-    // });
-
-    //---------------------------- Resume Buttons-----------------------
-    document.getElementById("resume-button-1").addEventListener("click", () => {
-        window.open("./resume/Anshuman-Patel-Resume.pdf", "_blank");
-        var link = document.createElement("a");
-        link.href = "./resume/Anshuman-Patel-Resume.pdf";
+    // Optimized Resume Button Handler
+    function handleResumeDownload() {
+        const resumeUrl = "./resume/Anshuman-Patel-Resume.pdf";
+        const link = document.createElement("a");
+        link.href = resumeUrl;
         link.target = "_blank";
         link.download = "Anshuman-Patel-Resume.pdf";
         link.click();
-    });
+    }
 
-    document.getElementById("resume-button-2").addEventListener("click", () => {
-        window.open("./resume/Anshuman-Patel-Resume.pdf", "_blank");
-        var link = document.createElement("a");
-        link.href = "./resume/Anshuman-Patel-Resume.pdf";
-        link.target = "_blank";
-        link.download = "Anshuman-Patel-Resume.pdf";
-        link.click();
-    });
-
-    document.getElementById("resume-button-3").addEventListener("click", () => {
-        window.open("./resume/Anshuman-Patel-Resume.pdf", "_blank");
-        var link = document.createElement("a");
-        link.href = "./resume/Anshuman-Patel-Resume.pdf";
-        link.target = "_blank";
-        link.download = "Anshuman-Patel-Resume.pdf";
-        link.click();
+    // Add event listeners to all resume buttons
+    document.addEventListener("DOMContentLoaded", function() {
+        const resumeButtons = [
+            "resume-button-1",
+            "resume-button-2", 
+            "resume-button-3"
+        ];
+        
+        resumeButtons.forEach(buttonId => {
+            const button = document.getElementById(buttonId);
+            if (button) {
+                button.addEventListener("click", handleResumeDownload);
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Back to top functionality
+        const topButton = document.getElementById('top-button');
+        if (topButton) {
+            topButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+        
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function() {
+            if (topButton) {
+                if (window.scrollY > 300) {
+                    topButton.style.display = 'flex';
+                } else {
+                    topButton.style.display = 'none';
+                }
+            }
+        });
     });
   </script>
 </html>
