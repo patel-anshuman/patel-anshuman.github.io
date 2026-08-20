@@ -113,11 +113,22 @@
       </div>
     </nav>
 
+    <!-- Hidden clip-path definition for the squircle photo frame -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <clipPath id="squircle" clipPathUnits="objectBoundingBox">
+          <path d="M 1.00000,0.50000 L 0.99929,0.58117 L 0.99714,0.62866 L 0.99357,0.66819 L 0.98858,0.70306 L 0.98215,0.73462 L 0.97429,0.76355 L 0.96500,0.79025 L 0.95428,0.81498 L 0.94211,0.83791 L 0.92850,0.85914 L 0.91342,0.87877 L 0.89685,0.89685 L 0.87877,0.91342 L 0.85914,0.92850 L 0.83791,0.94211 L 0.81498,0.95428 L 0.79025,0.96500 L 0.76355,0.97429 L 0.73462,0.98215 L 0.70306,0.98858 L 0.66819,0.99357 L 0.62866,0.99714 L 0.58117,0.99929 L 0.50000,1.00000 L 0.41883,0.99929 L 0.37134,0.99714 L 0.33181,0.99357 L 0.29694,0.98858 L 0.26538,0.98215 L 0.23645,0.97429 L 0.20975,0.96500 L 0.18502,0.95428 L 0.16209,0.94211 L 0.14086,0.92850 L 0.12123,0.91342 L 0.10315,0.89685 L 0.08658,0.87877 L 0.07150,0.85914 L 0.05789,0.83791 L 0.04572,0.81498 L 0.03500,0.79025 L 0.02571,0.76355 L 0.01785,0.73462 L 0.01142,0.70306 L 0.00643,0.66819 L 0.00286,0.62866 L 0.00071,0.58117 L 0.00000,0.50000 L 0.00071,0.41883 L 0.00286,0.37134 L 0.00643,0.33181 L 0.01142,0.29694 L 0.01785,0.26538 L 0.02571,0.23645 L 0.03500,0.20975 L 0.04572,0.18502 L 0.05789,0.16209 L 0.07150,0.14086 L 0.08658,0.12123 L 0.10315,0.10315 L 0.12123,0.08658 L 0.14086,0.07150 L 0.16209,0.05789 L 0.18502,0.04572 L 0.20975,0.03500 L 0.23645,0.02571 L 0.26538,0.01785 L 0.29694,0.01142 L 0.33181,0.00643 L 0.37134,0.00286 L 0.41883,0.00071 L 0.50000,0.00000 L 0.58117,0.00071 L 0.62866,0.00286 L 0.66819,0.00643 L 0.70306,0.01142 L 0.73462,0.01785 L 0.76355,0.02571 L 0.79025,0.03500 L 0.81498,0.04572 L 0.83791,0.05789 L 0.85914,0.07150 L 0.87877,0.08658 L 0.89685,0.10315 L 0.91342,0.12123 L 0.92850,0.14086 L 0.94211,0.16209 L 0.95428,0.18502 L 0.96500,0.20975 L 0.97429,0.23645 L 0.98215,0.26538 L 0.98858,0.29694 L 0.99357,0.33181 L 0.99714,0.37134 L 0.99929,0.41883 Z" />
+        </clipPath>
+      </defs>
+    </svg>
+
     <!-- Home Section -->
     <section id="home" role="banner">
       <div>
         <p id="user-detail-name">Anshuman <span>Patel</span></p>
-        <img src="./images/home/photo.jpg" alt="Anshuman Patel - Software Engineer III, Backend & Cloud Engineer" class="home-img" />
+        <div class="home-img-frame">
+          <img src="./images/home/photo.jpg" alt="Anshuman Patel - Software Engineer III, Backend & Cloud Engineer" class="home-img" />
+        </div>
       </div>
       <hr />
       <div id="user-title">
@@ -942,16 +953,15 @@
       
       // Function to toggle the dropdown menu and icons
       function toggleMenu() {
-        const isVisible = dropdownMenu.style.display === 'block';
-        dropdownMenu.style.display = isVisible ? 'none' : 'block';
-        hamburgerIcon.style.display = isVisible ? 'flex' : 'none';
-        closeIcon.style.display = isVisible ? 'none' : 'flex';
-        
-        if (!isVisible) {
+        const isOpen = dropdownMenu.classList.contains('open');
+        dropdownMenu.classList.toggle('open', !isOpen);
+        hamburgerIcon.style.display = isOpen ? 'flex' : 'none';
+        closeIcon.style.display = isOpen ? 'none' : 'flex';
+        document.body.style.overflow = isOpen ? '' : 'hidden';
+
+        if (!isOpen) {
           navMenu.style.backdropFilter = 'blur(10px)';
           navMenu.style.backgroundColor = 'rgba(8, 13, 46, 0.75)';
-          dropdownMenu.style.backdropFilter = 'blur(10px)';
-          dropdownMenu.style.backgroundColor = 'rgba(8, 13, 46, 0.75)';
         } else {
           navMenu.style.backdropFilter = 'none';
           navMenu.style.backgroundColor = 'transparent';
