@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Anshuman Patel - Full Stack Web Developer specializing in React, Node.js, and modern web technologies.">
-    <meta name="keywords" content="web developer, full stack developer, react, nodejs, javascript, portfolio">
+    <meta name="description" content="Anshuman Patel - Software Engineer III specializing in backend engineering, AWS infrastructure, and PostgreSQL performance optimization.">
+    <meta name="keywords" content="backend engineer, cloud engineer, software engineer, aws, postgresql, node.js, typescript, portfolio">
     <meta name="author" content="Anshuman Patel">
     <link
       rel="shortcut icon"
@@ -16,7 +16,7 @@
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Portfolio • Anshuman Patel">
-    <meta property="og:description" content="Full Stack Web Developer">
+    <meta property="og:description" content="Software Engineer III | Backend & Cloud Engineer">
     <meta property="og:image" content="./images/home/photo.jpg">
     <meta property="og:url" content="https://patel-anshuman.github.io/">
 
@@ -24,22 +24,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-      media="print" onload="this.media='all'"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Groote:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
       media="print" onload="this.media='all'"
     />
     <noscript>
       <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Groote:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet"
       />
     </noscript>
@@ -57,17 +48,16 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Anshuman Patel",
-      "jobTitle": "Full Stack Web Developer",
-      "description": "Full Stack Web Developer specializing in React, Node.js, and modern web technologies",
+      "jobTitle": "Software Engineer III | Backend & Cloud Engineer",
+      "description": "Software Engineer III specializing in backend engineering, AWS infrastructure, PostgreSQL, and performance optimization",
       "url": "https://patel-anshuman.github.io",
       "image": "https://patel-anshuman.github.io/images/home/photo.jpg",
       "email": "patelanshuman6@gmail.com",
       "telephone": "+917008157930",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Sambalpur",
-        "addressRegion": "Odisha",
-        "postalCode": "768221",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
         "addressCountry": "IN"
       },
       "sameAs": [
@@ -75,7 +65,7 @@
         "https://www.linkedin.com/in/patel-anshuman/"
       ],
       "knowsAbout": [
-        "JavaScript", "React", "Node.js", "Express.js", "MongoDB", "MySQL", "Python", "Flask", "HTML", "CSS", "TypeScript"
+        "TypeScript", "JavaScript", "SQL", "Node.js", "Fastify", "Express.js", "REST APIs", "WebSockets", "PostgreSQL", "MongoDB", "Redis", "AWS", "Grafana", "Performance Optimization", "Database Design", "System Architecture", "API Design"
       ]
     }
     </script>
@@ -91,7 +81,7 @@
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script> -->
   </head>
   <body>
-    <!-- <div id="background-image"></div> -->
+    <div id="background-image"></div>
     <!-- Navbar -->
     <nav id="nav-menu" role="navigation" aria-label="Main navigation">
       <a href="#home" aria-label="Home">
@@ -101,18 +91,25 @@
         <a href="#home" class="nav-link home" role="menuitem">Home</a>
         <a href="#about" class="nav-link about section" role="menuitem">About</a>
         <a href="#skills" class="nav-link skills" role="menuitem">Skills</a>
-        <a href="#projects" class="nav-link projects" role="menuitem">Projects</a>
-        <a href="#statistics" class="nav-link statistics" role="menuitem">GitStats</a>
+        <!-- <a href="#projects" class="nav-link projects" role="menuitem">Projects</a> -->
+        <!-- <a href="#statistics" class="nav-link statistics" role="menuitem">GitStats</a> -->
         <a href="#contact" class="nav-link contact" role="menuitem">Contact</a>
         <button id="resume-button-1" class="nav-link resume">
           <a id="resume-link-1">Resume</a>
         </button>
       </div>
-      <div id="hamburger-icon">
-        <img src="./images/navbar/hamburger2.png" alt="Hamburger Menu" />
+      <div id="hamburger-icon" role="button" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+          <path d="M4 5h16" />
+          <path d="M4 12h16" />
+          <path d="M4 19h16" />
+        </svg>
       </div>
-      <div id="close-icon">
-        <img src="./images/navbar/close.png" alt="Close" />
+      <div id="close-icon" role="button" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
       </div>
     </nav>
 
@@ -120,11 +117,12 @@
     <section id="home" role="banner">
       <div>
         <p id="user-detail-name">Anshuman <span>Patel</span></p>
-        <img src="./images/home/photo.jpg" alt="Anshuman Patel - Full Stack Web Developer" class="home-img" />
+        <img src="./images/home/photo.jpg" alt="Anshuman Patel - Software Engineer III, Backend & Cloud Engineer" class="home-img" />
       </div>
       <hr />
-      <div>
-        <p id="user-title">Full Stack Web Developer</p>
+      <div id="user-title">
+        <p id="user-title-primary">Software Engineer</p>
+        <p id="user-title-secondary">Backend &amp; Cloud Engineer</p>
       </div>
       <a href="#about" id="down" aria-label="Scroll to About section">
         <img src="./images/home/down-arrow.png" alt="Scroll down to About section" />
@@ -134,54 +132,52 @@
     <!-- About Section  -->
     <section id="about" class="about section" role="main">
       <p class="sec">About <br /><span>Me</span></p>
-      <p id="user-detail-intro">
-        Hi, I'm Anshuman Patel, an aspiring full-stack web developer with a
-        background in Civil Engineering from Government College of Engineering,
-        Keonjhar, Odisha.
-        <br> <br>
-        I have worked on several projects and have hands-on experience majorly in HTML, CSS, JavaScript, React for frontend development, and Node.js,
-        Express.js, and databases like MongoDB and MySQL for the backend
-        development.
-        <br> <br>
-        Furthermore, I'm certified as a prompt engineer, skilled at rapid adaptation to new technologies and industry trends. I've explored Python, Flask, and diverse OpenAI tools, applying this expertise to drive innovation in my projects.
-        <br> <br>
-        For more about my journey and qualifications, you can explore my resume here.
-      </p>
-      <button id="resume-button-2" class="resume">
-        <a id="resume-link-2">Resume</a>
-      </button>
+      <div id="about-content">
+        <p id="user-detail-intro">
+          Hi, I'm Anshuman Patel, a Software Engineer III at Precize, where I own
+          the backend systems behind business-critical fintech workflows. I
+          started in Civil Engineering at Government College of Engineering,
+          Keonjhar, and moved into software because I wanted to build systems
+          that scale, not structures that stand still.
+          <br> <br>
+          In 2.5+ years, I've gone from writing REST APIs to owning backend
+          architecture end to end: PostgreSQL and AWS infrastructure, production
+          observability, and the trade-off calls that come with scaling a
+          fintech platform. Two numbers I'm proud of: a 25x backend performance
+          improvement and a 15x database throughput gain, both from finding the
+          actual bottleneck instead of adding more infrastructure.
+          <br> <br>
+          Day to day that's Node.js, TypeScript, and Fastify on the application
+          side, PostgreSQL and Redis for data, and AWS (Elastic Beanstalk,
+          Lambda, RDS, CloudWatch) for infrastructure, with Grafana keeping me
+          honest about what's happening in production.
+        </p>
+        <div id="about-side">
+          <p id="about-statement">My resume has the full timeline, if you want it.</p>
+          <button id="resume-button-2" class="resume">
+            <a id="resume-link-2">Resume</a>
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section  -->
     <section id="skills" role="main">
       <p class="sec">Skills</p>
-      <!-- Frontend -->
+      <!-- Languages -->
       <div class="skills-sec">
-        <span class="skills-head">Frontend</span>
+        <span class="skills-head">Languages</span>
         <div class="skills-icons">
           <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skills-card-img" loading="lazy" alt="HTML5" />
-            <p class="skills-card-name">HTML</p>
-          </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skills-card-img" loading="lazy" alt="CSS3" />
-            <p class="skills-card-name">CSS</p>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="skills-card-img" loading="lazy" alt="TypeScript" />
+            <p class="skills-card-name">TypeScript</p>
           </div>
           <div class="skills-card">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skills-card-img" loading="lazy" alt="JavaScript" />
             <p class="skills-card-name">JavaScript</p>
           </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="skills-card-img" loading="lazy" alt="React" />
-            <p class="skills-card-name">React</p>
-          </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="skills-card-img" loading="lazy" alt="TypeScript" />
-            <p class="skills-card-name">TypeScript</p>
-          </div>
         </div>
       </div>
-      <br />
       <!-- Backend -->
       <div class="skills-sec">
         <span class="skills-head">Backend</span>
@@ -192,19 +188,25 @@
             <p class="skills-card-name">NodeJS</p>
           </div>
           <div class="skills-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastify/fastify-original.svg"
+           class="skills-card-img" loading="lazy" alt="Fastify" />
+            <p class="skills-card-name">Fastify</p>
+          </div>
+          <div class="skills-card">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
            class="skills-card-img" loading="lazy" alt="Express.js" />
             <p class="skills-card-name">ExpressJS</p>
           </div>
+        </div>
+      </div>
+      <!-- Databases -->
+      <div class="skills-sec">
+        <span class="skills-head">Databases</span>
+        <div class="skills-icons">
           <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-           class="skills-card-img" loading="lazy" alt="Python" />
-            <p class="skills-card-name">Python</p>
-          </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
-           class="skills-card-img" loading="lazy" alt="Flask" />
-            <p class="skills-card-name">Flask</p>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+           class="skills-card-img" loading="lazy" alt="PostgreSQL" />
+            <p class="skills-card-name">PostgreSQL</p>
           </div>
           <div class="skills-card">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
@@ -212,13 +214,25 @@
             <p class="skills-card-name">MongoDB</p>
           </div>
           <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
-           class="skills-card-img" loading="lazy" alt="MySQL" />
-            <p class="skills-card-name">MySQL</p>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" class="skills-card-img" loading="lazy" alt="Redis" />
+            <p class="skills-card-name">Redis</p>
           </div>
         </div>
       </div>
-      <br />
+      <!-- Cloud & Observability -->
+      <div class="skills-sec">
+        <span class="skills-head">Cloud &amp; Observability</span>
+        <div class="skills-icons">
+          <div class="skills-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="skills-card-img" loading="lazy" alt="AWS" />
+            <p class="skills-card-name">AWS</p>
+          </div>
+          <div class="skills-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg" class="skills-card-img" loading="lazy" alt="Grafana" />
+            <p class="skills-card-name">Grafana</p>
+          </div>
+        </div>
+      </div>
       <!-- Tools -->
       <div class="skills-sec">
         <span class="skills-head">Tools</span>
@@ -228,52 +242,11 @@
             <p class="skills-card-name">Postman</p>
           </div>
           <div class="skills-card">
-            <img src="./images/skills/openai.JPG" class="skills-card-img" loading="lazy" alt="OpenAI" />
-            <p class="skills-card-name">OpenAI</p>
-          </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="skills-card-img" loading="lazy" alt="AWS" />
-            <p class="skills-card-name">AWS</p>
-          </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" class="skills-card-img" loading="lazy" alt="Redis" />
-            <p class="skills-card-name">Redis</p>
-          </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg" class="skills-card-img" loading="lazy" alt="Socket.io" />
-            <p class="skills-card-name">Socket.io</p>
-          </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="skills-card-img" loading="lazy" alt="Figma" />
-            <p class="skills-card-name">Figma</p>
-          </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chakraui/chakraui-original.svg" class="skills-card-img" loading="lazy" alt="Chakra UI" />
-            <p class="skills-card-name">Chakra UI</p>
-          </div>
-          <div class="skills-card">
-            <img src="./images/skills/oauth.PNG" class="skills-card-img" loading="lazy" alt="OAuth" />
-            <p class="skills-card-name">OAuth</p>
-          </div>
-          <div class="skills-card">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="skills-card-img" loading="lazy" alt="Git" />
             <p class="skills-card-name">Git</p>
           </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" class="skills-card-img" loading="lazy" alt="Netlify" />
-            <p class="skills-card-name">Netlify</p>
-          </div>
-          <div class="skills-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" class="skills-card-img" loading="lazy" alt="Vercel" />
-            <p class="skills-card-name">Vercel</p>
-          </div>
-          <div class="skills-card">
-            <img src="./images/skills/cyclic.JPG" class="skills-card-img" loading="lazy" alt="Cyclic" />
-            <p class="skills-card-name">Cyclic</p>
-          </div>
         </div>
       </div>
-      <br />
       <!-- Soft Skills -->
       <div class="skills-sec">
         <span class="skills-head">Soft Skills</span>
@@ -298,7 +271,7 @@
       </div>
     </section>
 
-    <!-- Projects Section  -->
+    <!-- Projects Section
     <section id="projects" role="main">
       <p class="sec">Projects</p>
       <div class="project-cards-section">
@@ -320,7 +293,6 @@
               ShotSpotter: Your go-to web app for booking photographers by occasion, location, and budget.
             </p>
             <div class="project-tech-stack">
-              <!-- Tech stck icons & names -->
               <div class="project-skills-card">
                 <img
                   src="./images/skills/react.PNG"
@@ -391,7 +363,6 @@
               MediMate: An all-in-one health chatbot for appointments, prescriptions, tips, and emergency assistance.
             </p>
             <div class="project-tech-stack">
-              <!-- Tech stck icons & names -->
               <div class="project-skills-card">
                 <img
                   src="./images/skills/react.PNG"
@@ -469,7 +440,6 @@
               A destination for men's products and accessories. Browse, shop, and review your orders effortlessly.
             </p>
             <div class="project-tech-stack">
-              <!-- Tech stck icons & names -->
               <div class="project-skills-card">
                 <img
                   src="./images/skills/html.PNG"
@@ -547,7 +517,6 @@
               A versatile, OpenAI-powered web app to convert code in various languages, debug, and ensure quality seamlessly.
             </p>
             <div class="project-tech-stack">
-              <!-- Tech stck icons & names -->
               <div class="project-skills-card">
                 <img
                   src="./images/skills/react.PNG"
@@ -611,7 +580,6 @@
               GlamConnect is a project that empowers customers to easily book appointments with beauty professionals.
             </p>
             <div class="project-tech-stack">
-              <!-- Tech stck icons & names -->
               <div class="project-skills-card">
                 <img
                   src="./images/skills/react.PNG"
@@ -682,7 +650,6 @@
               API Labs is a clone of Postman, providing an intuitive interface to test APIs, for efficient API development process.
             </p>
             <div class="project-tech-stack">
-              <!-- Tech stck icons & names -->
               <div class="project-skills-card">
                 <img
                   src="./images/skills/html.PNG"
@@ -755,7 +722,6 @@
               The hub for exclusive savings on food, beauty, entertainment, and retail, offering a seamless experience to browse, book, and indulge in the best deals.
             </p>
             <div class="project-tech-stack">
-              <!-- Tech stck icons & names -->
               <div class="project-skills-card">
                 <img
                   src="./images/skills/html.PNG"
@@ -847,12 +813,13 @@
         </div>
       </div>
     </section>
+    -->
 
-    <!-- Statistics Section  -->
+    <!-- Statistics Section
     <section id="statistics" role="main">
       <p class="sec">Statistics</p>
       <div class="statistics-cards-section">
-        
+
         <div class="react-activity-calendar calendar">
             <img src="https://ghchart.rshah.org/patel-anshuman" alt="GitHub Activity Calendar for patel-anshuman" loading="lazy" />
         </div>
@@ -878,6 +845,7 @@
         </div>
       </div>
     </section>
+    -->
     <!-- <div class="react-activity-calendar calendar"></div> -->
 
     <!-- Contact Section  -->
@@ -885,44 +853,48 @@
       <p class="sec">Contact</p>
       <div id="contact-details">
         <div>
-          <div>
-            <label>Email:</label>
-            <span id="contact-email"
-              ><a href="mailto:patelanshuman6@gmail.com"
-                >patelanshuman6@gmail.com</a
-              ></span
-            >
+          <p class="contact-lead">Open to backend and cloud engineering conversations, always.</p>
+          <div class="contact-row">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
+            </span>
+            <div>
+              <label>Email</label>
+              <span id="contact-email"
+                ><a href="mailto:patelanshuman6@gmail.com"
+                  >patelanshuman6@gmail.com</a
+                ></span
+              >
+            </div>
           </div>
-          <br />
-          <div>
-            <label>Phone:</label>
-            <span id="contact-phone"
-              ><a href="tel:+917008157930">+91 7008 157 930</a></span
-            >
+          <div class="contact-row">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
+            </span>
+            <div>
+              <label>Phone</label>
+              <span id="contact-phone"
+                ><a href="tel:+917008157930">+91 7008 157 930</a></span
+              >
+            </div>
           </div>
-          <br />
-          <div>
-            <label>Address:</label>
-            <span id="contact-address">Sambalpur, Odisha - 768221</span>
+          <div class="contact-row">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+            </span>
+            <div>
+              <label>Address</label>
+              <span id="contact-address">Mumbai, India</span>
+            </div>
           </div>
         </div>
         <div id="contact-buttons">
           <a href="https://github.com/patel-anshuman/" target="_blank">
             <button id="contact-github">
               <span class="icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1.em"
-                  viewBox="0 0 496 512"
-                >
-                  <style>
-                    svg {
-                      fill: #ffffff;
-                    }
-                  </style>
-                  <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
               </span>
               <span>patel-anshuman</span>
@@ -932,19 +904,10 @@
           <a href="https://www.linkedin.com/in/patel-anshuman/" target="_blank">
             <button id="contact-linkedin">
               <span class="icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 448 512"
-                >
-                  <style>
-                    svg {
-                      fill: #ffffff;
-                    }
-                  </style>
-                  <path
-                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
                 </svg>
               </span>
               <span>patel-anshuman</span>
@@ -962,8 +925,8 @@
       <a href="#home" class="drop-link" role="menuitem">Home</a>
       <a href="#about" class="drop-link" role="menuitem">About</a>
       <a href="#skills" class="drop-link" role="menuitem">Skills</a>
-      <a href="#projects" class="drop-link" role="menuitem">Projects</a>
-      <a href="#statistics" class="drop-link" role="menuitem">GitStats</a>
+      <!-- <a href="#projects" class="drop-link" role="menuitem">Projects</a> -->
+      <!-- <a href="#statistics" class="drop-link" role="menuitem">GitStats</a> -->
       <a href="#contact" class="drop-link" role="menuitem">Contact</a>
       <button id="resume-button-3" class="drop-link resume">
         <a id="resume-link-3">Resume</a>
@@ -986,9 +949,9 @@
         
         if (!isVisible) {
           navMenu.style.backdropFilter = 'blur(10px)';
-          navMenu.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+          navMenu.style.backgroundColor = 'rgba(8, 13, 46, 0.75)';
           dropdownMenu.style.backdropFilter = 'blur(10px)';
-          dropdownMenu.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+          dropdownMenu.style.backgroundColor = 'rgba(8, 13, 46, 0.75)';
         } else {
           navMenu.style.backdropFilter = 'none';
           navMenu.style.backgroundColor = 'transparent';
@@ -1032,7 +995,10 @@
 
     <!-- Go to Top button  -->
     <a href="#home" id="top-button" aria-label="Back to top">
-      <img src="./images/home/up-arrow.png" alt="Back to top" />
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m5 12 7-7 7 7" />
+        <path d="M12 19V5" />
+      </svg>
     </a>
   </body>
 
